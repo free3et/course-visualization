@@ -27,3 +27,7 @@ details summary:before {
 details[open] summary:before {
     content: '\f146';
 }
+
+.checked label {
+    color: #0fa47f;
+}

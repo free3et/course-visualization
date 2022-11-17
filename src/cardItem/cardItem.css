@@ -1,8 +1,8 @@
-h2.lesson-title {
+h2 {
     margin: 15px 0 0;
-    color: #682374;
+    color: #151a75;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.35em;
 }
 
 ul {
@@ -55,3 +55,4 @@ li {
     background-color: #60226f;
     color: #ffffff;
 }
+

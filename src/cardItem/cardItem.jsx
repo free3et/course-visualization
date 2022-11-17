@@ -1,12 +1,8 @@
-import { useContext, useState } from "react";
-import { Checkbox } from "../UI/checkbox/checkbox";
 import { Textarea } from "../UI/textarea/textarea";
 import "./cardItem.css";
 
-export function CardItem({ item, handleChange }) {
+export function CardItem({ item }) {
   const {
-    title,
-    name,
     type,
     keyPoints = [],
     hometask = [],
@@ -16,10 +12,6 @@ export function CardItem({ item, handleChange }) {
 
   return (
     <>
-      <summary>
-        <h2 className="lesson-title">{title}</h2>
-        <Checkbox />
-      </summary>
       <div className="card">
         <h4>Type: {type}</h4>
         {keyPoints.length > 0 && (

@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./checkbox.css";
+
 export function Checkbox() {
   let [checked, setChecked] = useState(false);
   let [classComplited, setClassComplited] = useState("unchecked");
   let [messageComplited, setMessageComplited] = useState("Complete lesson");
 
-  function handleChange(name) {
+  function handleChange() {
     setChecked((checked = !checked));
     setClassComplited(
       checked ? (classComplited = "checked") : (classComplited = "unchecked")
@@ -15,6 +16,7 @@ export function Checkbox() {
         ? (messageComplited = "Complete lesson")
         : (messageComplited = "Uncompleted lesson")
     );
+    return checked;
   }
 
   return (
@@ -22,8 +24,8 @@ export function Checkbox() {
       <input
         type="checkbox"
         defaultChecked={checked}
-        onChange={(event) => {
-          handleChange(name);
+        onChange={() => {
+          handleChange(checked);
         }}
       />
       <label>{messageComplited}</label>

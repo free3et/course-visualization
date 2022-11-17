@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./textarea.css";
 
 export function Textarea() {
   let [commentValue, setValue] = useState("");
   let [comment, setComment] = useState("");
+  const [messageArr, setMeessageToArr] = useState([]);
 
   function submitHandler(event) {
     event.preventDefault();
@@ -15,15 +16,24 @@ export function Textarea() {
   }
 
   function submitMessage(event) {
-    event.preventDefault();
     setComment((comment = commentValue));
     setValue((commentValue = ""));
+    setMeessageToArr((messageArr) => [...messageArr, comment]);
+    return messageArr;
   }
+
+  useEffect(() => {
+    submitMessage();
+  }, []);
 
   return (
     <div className="comment_wrapper">
-      <h3>Leave your comment</h3>
-      <h4>{comment}</h4>
+      <h2>Leave your comment</h2>
+      <div className="border_list">
+        {messageArr.map((item) => (
+          <p>{item}</p>
+        ))}
+      </div>
       <form onSubmit={submitHandler}>
         <textarea
           className="form-control"
