@@ -1,0 +1,23 @@
+.card_wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-lesson {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-top: 10px solid #7f78ac;
+    border-radius: 7px;
+    background-color: #ffffff;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+    color: #212529;
+    text-decoration: none;
+}

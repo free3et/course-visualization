@@ -1,0 +1,57 @@
+h2.lesson-title {
+    margin: 15px 0 0;
+    color: #682374;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+ul {
+    align-self: flex-start;
+    margin: 0;
+    list-style: disc outside url(check.svg);
+
+    padding-inline-start: 18px;
+}
+
+li {
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.border_list p {
+    width: 100%;
+    padding-left: 12px;
+    border-left: 2px solid #ab399b;
+    word-break: break-word;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+.links_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hometask_links {
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding: 0.6em 1.2em;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #7f78ac;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    transition: border, background-color 0.3s;
+}
+
+.hometask_links:hover {
+    border: 1px solid #4b1549;
+    background-color: #60226f;
+    color: #ffffff;
+}

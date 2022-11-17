@@ -1,0 +1,15 @@
+textarea.form-control {
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    color: #2c0929;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+textarea.form-control:focus {
+    outline: none !important;
+    border: 2px solid #682374;
+}
